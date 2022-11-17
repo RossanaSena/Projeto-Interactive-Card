@@ -1,0 +1,29 @@
+:root {
+    --main-color: #f2eae2cb;
+    --secondary-color:#FFFFFF;
+    --tertiary-color: #6B7189;
+    --primary-text-color: #1C232B;
+    --secondary-text-color: #3D8168;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+
+main {
+
+}
+
+.cardFront {
+
+}
+
+.cardBack {
+
+}

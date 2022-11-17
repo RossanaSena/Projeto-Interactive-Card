@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Interactive card</title>
+
+</head>
+  <body>
+    <section class="card">
+      <div class="cardFront">
+        <img src="./images/bg-card-front.png" alt="Card Front">
+        <div class="CardNumberFront"> 
+          0000 0000 0000
+        </div>
+        <div class="cardholderNameFront"> 
+          jane appleseed
+        </div>
+        <div class="ExpDate">
+          00/00
+        </div>
+      </div>
+
+      <div class="cardBack">
+        <img src="./images/bg-card-back.png" alt="Card Back">
+        <div>
+          000
+        </div>
+      </div>
+    </section>
+
+    <section class="information">
+      <form>
+        <label for="cardholderName">cardholder name</label>
+          <input type="text" id="cardholderName" class="inputTemplate" required placeholder="e.g. Jane Appleseed">
+  
+        <label for="cardNumber">card number</label>
+          <input type="cardNumber" id="cardNumber" class="inputTemplate" required placeholder=" e.g. 1234 5678 9123 0000">
+  
+        <label for="expDate">exp. date (MM/YY)</label>
+          <input type="expDateMM" id="expDateMM" class="inputTemplate" required placeholder="MM">
+          <input type="expDateYY" id="expDateYY" class="inputTemplate" required placeholder="YY">
+  
+        <label for="cvc">CVC</label>
+          <input type="expDate" id="expDate" class="inputTemplate" required placeholder="e.g. 123">
+      </form>
+    </section>
+
+    <button id="open-modal">Confirm</button>
+    <nav id="fade"></nav>
+    <nav id="modal">
+      <nav class="modal-header">
+      <h2>Thank you!</h2>
+      <button id="close-modal">Continue</button>
+      </nav>
+
+      <nav class="modal-body">
+        <p>We've added your card details</p>
+      </nav>
+
+    </nav>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Maria Julia Manasses Valaski, Rossana Sena</a>.
+    </div>
+  </body>
+</html>
